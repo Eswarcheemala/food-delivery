@@ -1,0 +1,8 @@
+.payment-options {
+    padding: 1rem;
+}
+.payment-options button {
+    margin: 0.5rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+}

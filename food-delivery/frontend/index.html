@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Food Delivery App</h1>
+    </header>
+    <main>
+        <!-- Dashboard 1: Welcome Page -->
+        <section id="welcome">
+            <h2>Welcome to Food Delivery App</h2>
+            <button onclick="navigateTo('food-items')">Next</button>
+        </section>
+
+        <!-- Dashboard 2: Food Items -->
+        <section id="food-items" style="display: none;">
+            <h2>Our Menu</h2>
+            <div class="dish">
+                <img src="https://example.com/noodles.jpg" alt="Noodles">
+                <h3>Noodles</h3>
+                <button onclick="orderFood('Noodles')">Order Now</button>
+            </div>
+            <div class="dish">
+                <img src="https://example.com/biryani.jpg" alt="Biryani">
+                <h3>Biryani</h3>
+                <button onclick="orderFood('Biryani')">Order Now</button>
+            </div>
+            <div class="dish">
+                <img src="https://example.com/pizza.jpg" alt="Pizza">
+                <h3>Pizza</h3>
+                <button onclick="orderFood('Pizza')">Order Now</button>
+            </div>
+            <div class="dish">
+                <img src="https://example.com/burger.jpg" alt="Burger">
+                <h3>Burger</h3>
+                <button onclick="orderFood('Burger')">Order Now</button>
+            </div>
+            <button onclick="navigateTo('order-tracking')">Track Order</button>
+        </section>
+
+        <!-- Dashboard 3: Order Tracking -->
+        <section id="order-tracking" style="display: none;">
+            <h2>Order Tracking</h2>
+            <p id="tracking-info">No active orders. Start ordering your favorite food now!</p>
+            <button onclick="navigateTo('order-details')">View Order Details</button>
+        </section>
+
+        <!-- Dashboard 4: Order Details -->
+        <section id="order-details" style="display: none;">
+            <h2>Your Orders</h2>
+            <p id="order-info">No orders yet. Start ordering delicious food!</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Food Delivery Service</p>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+</html>
